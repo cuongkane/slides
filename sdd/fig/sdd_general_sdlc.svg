@@ -1,0 +1,152 @@
+<svg width="720" height="980" viewBox="0 0 720 980" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>SDD Applied to the Software Development Life Cycle</title>
+  <desc>A diagram showing the standard SDLC phases (Requirements, Design, Development, Testing, Deployment, Maintenance) with SDD activities at each phase, feedback loops, and a legend.</desc>
+
+  <defs>
+    <marker id="sdlc-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M2 2L8 5L2 8" fill="#334155" stroke="none"/>
+    </marker>
+    <marker id="sdlc-arrow-light" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M2 2L8 5L2 8" fill="#94a3b8" stroke="none"/>
+    </marker>
+    <marker id="feedback-arrow-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M2 2L8 5L2 8" fill="#059669" stroke="none"/>
+    </marker>
+    <marker id="feedback-arrow-purple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M2 2L8 5L2 8" fill="#7c3aed" stroke="none"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="720" height="980" fill="#fafaf9" rx="12"/>
+
+  <!-- Column headers -->
+  <text x="155" y="30" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="15" font-weight="600" fill="#1e293b">Standard SDLC</text>
+  <text x="510" y="30" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="15" font-weight="600" fill="#1e293b">SDD Activities</text>
+
+  <!-- Dashed divider -->
+  <line x1="330" y1="18" x2="330" y2="770" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- ==================== Phase 1: Requirements ==================== -->
+  <rect x="40" y="55" width="230" height="56" rx="10" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="155" y="78" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#1e40af">Requirements</text>
+  <text x="155" y="96" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#3b82f6">Gather and define needs</text>
+
+  <!-- Arrow across -->
+  <line x1="270" y1="83" x2="345" y2="83" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#sdlc-arrow-light)"/>
+
+  <rect x="350" y="48" width="310" height="72" rx="10" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="505" y="72" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#064e3b">Write structured spec</text>
+  <text x="505" y="90" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#059669">Outcomes, scope, constraints,</text>
+  <text x="505" y="104" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#059669">edge cases, verification criteria</text>
+
+  <!-- Down arrow -->
+  <line x1="155" y1="111" x2="155" y2="155" stroke="#334155" stroke-width="1.5" marker-end="url(#sdlc-arrow)"/>
+
+  <!-- ==================== Phase 2: Design ==================== -->
+  <rect x="40" y="160" width="230" height="56" rx="10" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="155" y="183" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#1e40af">Design</text>
+  <text x="155" y="201" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#3b82f6">Architecture and tech decisions</text>
+
+  <line x1="270" y1="188" x2="345" y2="188" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#sdlc-arrow-light)"/>
+
+  <rect x="350" y="148" width="310" height="84" rx="10" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="505" y="172" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#064e3b">Spec lives in the repo</text>
+  <text x="505" y="190" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#059669">API contracts, schemas, decisions</text>
+  <text x="505" y="204" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#059669">recorded in versioned spec file</text>
+  <text x="505" y="218" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#059669">--- not a wiki or doc tool</text>
+
+  <line x1="155" y1="216" x2="155" y2="275" stroke="#334155" stroke-width="1.5" marker-end="url(#sdlc-arrow)"/>
+
+  <!-- ==================== Phase 3: Development ==================== -->
+  <rect x="40" y="280" width="230" height="56" rx="10" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="155" y="303" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#1e40af">Development</text>
+  <text x="155" y="321" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#3b82f6">Write and review code</text>
+
+  <line x1="270" y1="298" x2="345" y2="290" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#sdlc-arrow-light)"/>
+  <line x1="270" y1="318" x2="345" y2="360" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#sdlc-arrow-light)"/>
+
+  <rect x="350" y="268" width="310" height="56" rx="10" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="505" y="291" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#064e3b">Spec-first AI coding</text>
+  <text x="505" y="309" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#059669">Agent reads spec as context</text>
+
+  <rect x="350" y="338" width="310" height="56" rx="10" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="505" y="361" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#7f1d1d">Ambiguity halts, not guesses</text>
+  <text x="505" y="379" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#dc2626">[NEEDS CLARIFICATION] markers</text>
+
+  <line x1="155" y1="336" x2="155" y2="420" stroke="#334155" stroke-width="1.5" marker-end="url(#sdlc-arrow)"/>
+
+  <!-- ==================== Phase 4: Testing ==================== -->
+  <rect x="40" y="425" width="230" height="56" rx="10" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="155" y="448" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#1e40af">Testing</text>
+  <text x="155" y="466" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#3b82f6">Verify against acceptance criteria</text>
+
+  <line x1="270" y1="443" x2="345" y2="435" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#sdlc-arrow-light)"/>
+  <line x1="270" y1="463" x2="345" y2="505" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#sdlc-arrow-light)"/>
+
+  <rect x="350" y="413" width="310" height="56" rx="10" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="505" y="436" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#064e3b">Spec-generated tests</text>
+  <text x="505" y="454" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#059669">Verification criteria -> test cases</text>
+
+  <rect x="350" y="483" width="310" height="56" rx="10" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="505" y="506" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#064e3b">Adversarial agent review</text>
+  <text x="505" y="524" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#059669">Separate verifier checks vs spec</text>
+
+  <line x1="155" y1="481" x2="155" y2="570" stroke="#334155" stroke-width="1.5" marker-end="url(#sdlc-arrow)"/>
+
+  <!-- ==================== Phase 5: Deployment ==================== -->
+  <rect x="40" y="575" width="230" height="56" rx="10" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="155" y="598" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#1e40af">Deployment</text>
+  <text x="155" y="616" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#3b82f6">Release to production</text>
+
+  <line x1="270" y1="603" x2="345" y2="603" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#sdlc-arrow-light)"/>
+
+  <rect x="350" y="575" width="310" height="56" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="505" y="598" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#334155">Spec compliance gate</text>
+  <text x="505" y="616" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#64748b">PR must cite or update the spec</text>
+
+  <line x1="155" y1="631" x2="155" y2="690" stroke="#334155" stroke-width="1.5" marker-end="url(#sdlc-arrow)"/>
+
+  <!-- ==================== Phase 6: Maintenance ==================== -->
+  <rect x="40" y="695" width="230" height="56" rx="10" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="155" y="718" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#1e40af">Maintenance</text>
+  <text x="155" y="736" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#3b82f6">Bug fixes, enhancements</text>
+
+  <line x1="270" y1="723" x2="345" y2="723" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#sdlc-arrow-light)"/>
+
+  <rect x="350" y="695" width="310" height="56" rx="10" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="505" y="718" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#064e3b">Spec-anchored evolution</text>
+  <text x="505" y="736" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#059669">Update spec first, then code</text>
+
+  <!-- ==================== Feedback loops ==================== -->
+  <!-- Right: Iterative spec update (Testing → Requirements) -->
+  <path d="M660 539 L685 539 L685 83 L662 83" fill="none" stroke="#059669" stroke-width="1.2" stroke-dasharray="5 3" marker-end="url(#feedback-arrow-green)"/>
+  <text x="692" y="310" text-anchor="start" transform="rotate(90 692 310)" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="500" fill="#059669">Iterative spec update</text>
+
+  <!-- Left: Next iteration (Maintenance → Requirements) -->
+  <path d="M40 723 L18 723 L18 83 L38 83" fill="none" stroke="#7c3aed" stroke-width="1.2" stroke-dasharray="5 3" marker-end="url(#feedback-arrow-purple)"/>
+  <text x="8" y="420" text-anchor="start" transform="rotate(-90 8 420)" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="500" fill="#7c3aed">Next iteration</text>
+
+  <!-- ==================== Legend ==================== -->
+  <rect x="40" y="785" width="640" height="175" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <text x="60" y="812" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#1e293b">SDD levels (adopt incrementally)</text>
+
+  <!-- Spec-first -->
+  <rect x="60" y="826" width="14" height="14" rx="3" fill="#059669"/>
+  <text x="82" y="838" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">Spec-first --- write spec, guide AI, spec may be discarded after</text>
+
+  <!-- Guardrail -->
+  <rect x="60" y="852" width="14" height="14" rx="3" fill="#dc2626"/>
+  <text x="82" y="864" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">Guardrail --- AI stops on ambiguity instead of guessing</text>
+
+  <!-- Spec-anchored -->
+  <rect x="60" y="878" width="14" height="14" rx="3" fill="#94a3b8"/>
+  <text x="82" y="890" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">Spec-anchored --- spec stays alive as source of truth</text>
+
+  <!-- Adoption advice -->
+  <text x="60" y="920" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">Start with spec-first on 2-3 features. Graduate to spec-anchored</text>
+  <text x="60" y="936" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">for high-change areas. The spec is iterative --- write enough for</text>
+  <text x="60" y="952" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">the next cycle, not the entire feature upfront.</text>
+
+</svg>
